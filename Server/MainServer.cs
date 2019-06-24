@@ -15,7 +15,7 @@ namespace Server
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Server starting...");
+            Console.WriteLine("Server starting....");
             Ws = new WebSocketServer("ws://192.168.1.29");
             Ws.AddWebSocketService<Program>("/Chat");
             Ws.Start();
