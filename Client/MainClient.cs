@@ -25,7 +25,7 @@ namespace Client
                 Console.WriteLine("Name should be bigger than 5 characters and smaller then 15 characters.");
                 goto baştan;
             }
-            Ws = new WebSocket("ws://192.168.1.29/Chat");
+            Ws = new WebSocket("ws://localhost/Chat");
             Ws.OnMessage += Ws_OnMessage;
             Ws.Connect();
             Ws.OnClose += Ws_OnClose;

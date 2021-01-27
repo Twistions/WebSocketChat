@@ -16,10 +16,10 @@ namespace Server
         static void Main(string[] args)
         {
             Console.WriteLine("Server starting....");
-            Ws = new WebSocketServer("ws://192.168.1.29");
+            Ws = new WebSocketServer("ws://localhost");
             Ws.AddWebSocketService<Program>("/Chat");
             Ws.Start();
-            Console.WriteLine("Websocket server started on 192.168.1.29/Chat");
+            Console.WriteLine("Websocket server started on localhost/Chat");
             while (true)
             {
                 Console.WriteLine("Type DONE to close server.");
